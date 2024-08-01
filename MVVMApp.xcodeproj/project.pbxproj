@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2079134E2C5A4709009895BD /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079134D2C5A4709009895BD /* CourseDetailsViewModel.swift */; };
+		207913502C5A558D009895BD /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079134F2C5A558D009895BD /* CourseListViewModel.swift */; };
+		207913522C5A8432009895BD /* CourseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207913512C5A8432009895BD /* CourseCellViewModel.swift */; };
+		207913572C5A96AC009895BD /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207913562C5A96AC009895BD /* Box.swift */; };
 		20EC15782C59435F00003BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC15772C59435F00003BFE /* AppDelegate.swift */; };
 		20EC157A2C59435F00003BFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC15792C59435F00003BFE /* SceneDelegate.swift */; };
 		20EC157F2C59435F00003BFE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 20EC157E2C59435F00003BFE /* Base */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2079134D2C5A4709009895BD /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
+		2079134F2C5A558D009895BD /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
+		207913512C5A8432009895BD /* CourseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCellViewModel.swift; sourceTree = "<group>"; };
+		207913562C5A96AC009895BD /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		20EC15742C59435F00003BFE /* MVVMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EC15772C59435F00003BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EC15792C59435F00003BFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2079134A2C5A469D009895BD /* CourseCell */ = {
+			isa = PBXGroup;
+			children = (
+				20EC159D2C59483300003BFE /* CourseCell.swift */,
+				207913512C5A8432009895BD /* CourseCellViewModel.swift */,
+			);
+			path = CourseCell;
+			sourceTree = "<group>";
+		};
+		2079134B2C5A46AA009895BD /* CourseList */ = {
+			isa = PBXGroup;
+			children = (
+				20EC158B2C59452600003BFE /* CourseListViewController.swift */,
+				2079134F2C5A558D009895BD /* CourseListViewModel.swift */,
+				2079134A2C5A469D009895BD /* CourseCell */,
+			);
+			path = CourseList;
+			sourceTree = "<group>";
+		};
+		2079134C2C5A46CB009895BD /* CourseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				20EC158F2C5945F000003BFE /* CourseDetailsViewController.swift */,
+				2079134D2C5A4709009895BD /* CourseDetailsViewModel.swift */,
+			);
+			path = CourseDetails;
+			sourceTree = "<group>";
+		};
+		207913552C5A9697009895BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		20EC156B2C59435F00003BFE = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +111,10 @@
 		20EC15762C59435F00003BFE /* MVVMApp */ = {
 			isa = PBXGroup;
 			children = (
-				20EC158B2C59452600003BFE /* CourseListViewController.swift */,
-				20EC158F2C5945F000003BFE /* CourseDetailsViewController.swift */,
-				20EC159D2C59483300003BFE /* CourseCell.swift */,
+				207913562C5A96AC009895BD /* Box.swift */,
+				207913552C5A9697009895BD /* Helpers */,
+				2079134C2C5A46CB009895BD /* CourseDetails */,
+				2079134B2C5A46AA009895BD /* CourseList */,
 				20EC15992C5946E800003BFE /* Models */,
 				20EC15972C5946CB00003BFE /* Services */,
 				20EC159A2C5946F800003BFE /* StoryBoard */,
@@ -196,12 +240,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2079134E2C5A4709009895BD /* CourseDetailsViewModel.swift in Sources */,
 				20EC15922C59468400003BFE /* NetworkManager.swift in Sources */,
 				20EC15962C5946BD00003BFE /* DataManager.swift in Sources */,
 				20EC158E2C59457D00003BFE /* Course.swift in Sources */,
 				20EC159E2C59483300003BFE /* CourseCell.swift in Sources */,
 				20EC15942C59469E00003BFE /* ImageManager.swift in Sources */,
+				207913572C5A96AC009895BD /* Box.swift in Sources */,
+				207913522C5A8432009895BD /* CourseCellViewModel.swift in Sources */,
 				20EC158C2C59452600003BFE /* CourseListViewController.swift in Sources */,
+				207913502C5A558D009895BD /* CourseListViewModel.swift in Sources */,
 				20EC15902C5945F000003BFE /* CourseDetailsViewController.swift in Sources */,
 				20EC15782C59435F00003BFE /* AppDelegate.swift in Sources */,
 				20EC157A2C59435F00003BFE /* SceneDelegate.swift in Sources */,
